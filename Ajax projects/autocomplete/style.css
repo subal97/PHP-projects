@@ -1,0 +1,14 @@
+ul{
+	cursor: pointer;
+	height: 400px;
+	overflow-y: scroll;
+}
+
+ul::-webkit-scrollbar{
+	width: 7px;
+}
+
+ul::-webkit-scrollbar-thumb{
+	border-radius: 5px;
+	background: rgba(0,0,0,0.2);
+}

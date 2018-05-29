@@ -1,0 +1,312 @@
+-- phpMyAdmin SQL Dump
+-- version 4.5.1
+-- http://www.phpmyadmin.net
+--
+-- Host: 127.0.0.1
+-- Generation Time: May 24, 2018 at 12:19 PM
+-- Server version: 10.1.13-MariaDB
+-- PHP Version: 5.6.21
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `test`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `car database`
+--
+
+CREATE TABLE `car database` (
+  `id` int(11) NOT NULL,
+  `Make` varchar(136) DEFAULT NULL,
+  `Model` varchar(38) DEFAULT NULL,
+  `Full name` varchar(200) NOT NULL,
+  `Platform / generation number` varchar(30) DEFAULT NULL,
+  `European / World classification` varchar(29) DEFAULT NULL,
+  `Production years` varchar(17) DEFAULT NULL,
+  `American classification` varchar(24) DEFAULT NULL,
+  `Model Years (US/Canada)` varchar(18) DEFAULT NULL,
+  `Country of origin` varchar(13) DEFAULT NULL,
+  `Sold in Europe` varchar(11) DEFAULT NULL,
+  `Sold in North America` varchar(3) DEFAULT NULL,
+  `Sold in India` varchar(3) DEFAULT NULL,
+  `Units produced` varchar(25) DEFAULT NULL,
+  `Notes` varchar(86) DEFAULT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `car database`
+--
+
+INSERT INTO `car database` (`id`, `Make`, `Model`, `Full name`, `Platform / generation number`, `European / World classification`, `Production years`, `American classification`, `Model Years (US/Canada)`, `Country of origin`, `Sold in Europe`, `Sold in North America`, `Sold in India`, `Units produced`, `Notes`) VALUES
+(12, 'BMW', '250 Isetta, 300 Isetta', 'BMW 250 Isetta, 300 Isetta', '-', 'Bubble car (4-wheeler)', '1955-1962', 'Subcompact car', 'MY 1955-1962', 'Germany', 'Europe', 'YES', 'no', '161,728', 'Old models'),
+(13, 'BMW', '600', 'BMW 600', '-', 'Small car', '1957-1959', 'Subcompact car', 'MY 1957-1960', 'Germany', 'Europe', 'YES', 'no', '34,813', 'Old models'),
+(14, 'BMW', '700', 'BMW 700', '-', 'Small car', '1959-1964', 'Subcompact car', 'MY 1959-1965', 'Germany', 'Europe', 'YES', 'no', '188,211', 'Old models'),
+(15, 'BMW', 'i3', 'BMW i3', '(I01)', 'Small car (electric)', '2013-____', 'Subcompact car', 'MY 2014-____', 'Germany', 'Europe', 'YES', 'no', '', ''),
+(16, 'BMW', '1-Series', 'BMW 1-Series', '(E81, E82, E87, E88)', 'Compact car', '2004-2014', '', '', 'Germany', 'Europe', 'no', 'no', '', ''),
+(17, 'BMW', '1-Series', 'BMW 1-Series', '(F20, F21)', 'Compact car', '2011-____', '', '', 'Germany', 'Europe', 'no', 'YES', '', ''),
+(18, 'BMW', '2-Series', 'BMW 2-Series', '(F22, F23, F87)', 'Compact Sports car', '2014-____', 'Compact car', 'MY 2015-____', 'Germany', 'Europe', 'YES', 'no', '', ''),
+(19, 'BMW', '1-Series', 'BMW 1-Series', '(F52)', 'Compact car', '2017-____', '', '', 'China', 'no', 'no', 'no', '', ''),
+(20, 'BMW', 'New Class 1602, 1802, 2002', 'BMW New Class 1602, 1802, 2002', '(Type 114, E6, E10, E20)', 'Medium car', '1966-1975', 'Compact car', 'MY 1968-1976', 'Germany', 'Europe', 'YES', 'no', '', ''),
+(21, 'BMW', '3-Series', 'BMW 3-Series', '(E21)', 'Medium car', '1975-1983', 'Compact car', 'MY 1975-1983?', 'Germany', 'Europe', 'YES', 'no', '1,364,039', ''),
+(22, 'BMW', '3-Series, M3', 'BMW 3-Series, M3', '(E30)', 'Medium car', '1982-1994', 'Compact car', 'MY 1984-1991?', 'Germany', 'Europe', 'YES', 'no', '2,339,520', ''),
+(23, 'BMW', '3-Series, M3', 'BMW 3-Series, M3', '(E36)', 'Medium car', '1990-2000', 'Compact car', 'MY 1992-1999', 'Germany', 'Europe', 'YES', 'no', '', ''),
+(24, 'BMW', '3-Series, M3', 'BMW 3-Series, M3', '(E46)', 'Medium car', '1998-2006', 'Compact car', 'MY 1999-2006', 'Germany', 'Europe', 'YES', 'YES', '', ''),
+(25, 'BMW', '3-Series, M3', 'BMW 3-Series, M3', '(E90, E91, E92, E93)', 'Medium car', '2005-2013', 'Compact car', 'MY 2005-2011', 'Germany', 'Europe', 'YES', 'YES', '', ''),
+(26, 'BMW', '3-Series, M3', 'BMW 3-Series, M3', '(F30, F31, F80),', 'Medium car', '2012-____', 'Compact car', 'MY 2012-____', 'Germany', 'Europe', 'YES', 'YES', '', ''),
+(27, 'BMW', '4-Series, M4', 'BMW 4-Series, M4', '(F32, F33, F36, F82, F83)', 'Medium Sports car', '2013-____', 'Compact car', 'MY 2014-____', 'Germany', 'Europe', 'YES', 'YES', '', ''),
+(28, 'BMW', '3-Series, M3', 'BMW 3-Series, M3', '(G20)', 'Medium car', '2018-____', 'Compact car', 'MY 2019-____', 'Germany', 'Europe', 'YES', 'YES', '', 'Upcoming model, possible launch 2018 / MY 2019'),
+(29, 'BMW', '4-Series, M4', 'BMW 4-Series, M4', '??', 'Medium Sports car', '??', 'Compact car', 'MY ??', 'Germany', 'Europe', 'YES', 'YES', '', 'Upcoming model, possible launch 2019 / MY 2020'),
+(30, 'BMW', '3-Series GT', 'BMW 3-Series GT', '(F34)', 'Medium car', '2013-____', 'Compact car', 'MY 2014-____', 'Germany', 'Europe', 'YES', 'YES', '', ''),
+(31, 'BMW', 'New Class 1500, 1600, 1800, 2000', 'BMW New Class 1500, 1600, 1800, 2000', '(Type 115, 116, 118, 120, 121)', 'Large car', '1962-1972', 'Mid-size car', 'MY 1962-1972', 'Germany', 'Europe', 'YES', 'no', '', ''),
+(32, 'BMW', '5-Series', 'BMW 5-Series', '(E12)', 'Large car', '1972-1981', 'Mid-size car', 'MY 1975-1981', 'Germany', 'Europe', 'YES', 'no', '699,094', ''),
+(33, 'BMW', '5-Series, M5', 'BMW 5-Series, M5', '(E28)', 'Large car', '1981-1988', 'Mid-size car', 'MY 1982-1988', 'Germany', 'Europe', 'YES', 'no', '722328', ''),
+(34, 'BMW', '5-Series, M5', 'BMW 5-Series, M5', '(E34)', 'Large car', '1988-1996', 'Mid-size car', 'MY 1989-1996', 'Germany', 'Europe', 'YES', 'no', '1,333,412', ''),
+(35, 'BMW', '5-Series, M5', 'BMW 5-Series, M5', '(E39)', 'Large car', '1995-2004', 'Mid-size car', 'MY 1997-2003', 'Germany', 'Europe', 'YES', 'no', '', ''),
+(36, 'BMW', '5-Series, M5', 'BMW 5-Series, M5', '(E60, E61)', 'Large car', '2003-2011', 'Mid-size car', 'MY 2004-2009', 'Germany', 'Europe', 'YES', 'YES', '', ''),
+(37, 'BMW', '5-Series, M5', 'BMW 5-Series, M5', '(F10, F11), ', 'Large car', '2009-____', 'Mid-size car', 'MY 2010-____', 'Germany', 'Europe', 'YES', 'YES', '', ''),
+(38, 'BMW', '5-Series, M5', 'BMW 5-Series, M5', '(G30, G31)', 'Large car', '2017-____', 'Mid-size car', 'MY ??', 'Germany', 'Europe', 'YES', 'YES', '', ''),
+(39, 'BMW', '5-Series GT', 'BMW 5-Series GT', '(F07)', 'Large car', '2009-2017', 'Mid-size car', 'MY 2010-2017', 'Germany', 'Europe', 'YES', 'YES', '', ''),
+(40, 'BMW', '6-Series GT', 'BMW 6-Series GT', '(G32)', 'Large car', '2017-____', 'Mid-size car', 'MY 2018-____', 'Germany', 'Europe', 'YES', 'YES', '', ''),
+(41, 'BMW', 'New Six CS', 'BMW New Six CS', '(E9)', 'Large Sports car', '1968-1975', 'Grand tourers', 'MY 1968-1973', 'Germany', 'Europe', 'YES', 'no', '', ''),
+(42, 'BMW', '6-Series, M6', 'BMW 6-Series, M6', '(E24)', 'Large Sports car', '1976-1989', 'Grand tourers', 'MY 1977-1989', 'Germany', 'Europe', 'YES', 'no', '86,216', ''),
+(43, 'BMW', '8-Series', 'BMW 8-Series', '(E31)', 'Luxury Sports car', '1989-1998', 'Grand tourers', 'MY 1991-1997', 'Germany', 'Europe', 'YES', 'no', '31,062', ''),
+(44, 'BMW', '6-Series, M6', 'BMW 6-Series, M6', '(E63, E64)', 'Large Sports car', '2003-2011', 'Grand tourers', 'MY 2004-2010', 'Germany', 'Europe', 'YES', 'YES', '', ''),
+(45, 'BMW', '6-Series, M6', 'BMW 6-Series, M6', '(F12, F13)', 'Large Sports car', '2011-____', 'Grand tourers', 'MY 2012-____', 'Germany', 'Europe', 'YES', 'YES', '', ''),
+(46, 'BMW', '501', 'BMW 501', '-', 'Luxury car', '1952-1962', 'Full-size car', 'MY 1952-1961', 'Germany', 'Europe', 'YES', 'no', '', 'Old models'),
+(47, 'BMW', '502', 'BMW 502', '-', 'Luxury car', '1954-1964', 'Full-size car', 'MY 1954-1964', 'Germany', 'Europe', 'YES', 'no', '', ''),
+(48, 'BMW', '503', 'BMW 503', '-', 'Luxury Sports car', '1956-1959', 'Full-size car', 'MY 1956-1959', 'Germany', 'Europe', 'YES', 'no', '', 'Old models'),
+(49, 'BMW', '3200 CS', 'BMW 3200 CS', '-', 'Luxury Sports car', '1962-1965', 'Full-size car', 'MY 1962-1965', 'Germany', 'Europe', 'YES', 'no', '', 'Old models'),
+(50, 'BMW', 'New Six', 'BMW New Six', '(E3)', 'Luxury car', '1968-1977', 'Full-size car', 'MY 1971-1976', 'Germany', 'Europe', 'YES', 'no', '221,991', ''),
+(51, 'BMW', '7-Series', 'BMW 7-Series', '(E23)', 'Luxury car', '1977-1986', 'Full-size car', 'MY 1978-1987?', 'Germany', 'Europe', 'YES', 'no', '285,029', ''),
+(52, 'BMW', '7-Series', 'BMW 7-Series', '(E32)', 'Luxury car', '1986-1994', 'Full-size car', 'MY 1987?-1994', 'Germany', 'Europe', 'YES', 'no', '311,068', ''),
+(53, 'BMW', '7-Series', 'BMW 7-Series', '(E38)', 'Luxury car', '1994-2001', 'Full-size car', 'MY 1995-2001', 'Germany', 'Europe', 'YES', 'no', '340,242', ''),
+(54, 'BMW', '7-Series', 'BMW 7-Series', '(E65, E66)', 'Luxury car', '2001-2008', 'Full-size car', 'MY 2002-2009', 'Germany', 'Europe', 'YES', 'YES', '', ''),
+(55, 'BMW', '7-Series', 'BMW 7-Series', '(F01, F02)', 'Luxury car', '2008-2015', 'Full-size car', 'MY 2010-2015', 'Germany', 'Europe', 'YES', 'YES', '', ''),
+(56, 'BMW', '7-Series', 'BMW 7-Series', '(G10, G11)', 'Luxury car', '2015-____', 'Full-size car', 'MY 2016-____', 'Germany', 'Europe', 'YES', 'YES', '', ''),
+(57, 'BMW', 'Z1', 'BMW Z1', '(E30)', 'Sports compact / roadster car', '1989-1991', '', '', 'Germany', 'Europe', 'no', 'no', '~8000', ''),
+(58, 'BMW', 'Z3, M', 'BMW Z3, M', '(E36)', 'Sports compact / roadster car', '1996-2002', 'Roadster car', 'MY 1996-2002', 'Germany', 'Europe', 'YES', 'no', '', ''),
+(59, 'BMW', 'Z4', 'BMW Z4', '(E85, E86)', 'Sports compact / roadster car', '2002-2008', 'Roadster car', 'MY 2003-2008', 'Germany', 'Europe', 'YES', 'no', '', ''),
+(60, 'BMW', 'Z4', 'BMW Z4', '(E89)', 'Sports compact / roadster car', '2009-____', 'Roadster car', 'MY 2009-____', 'Germany', 'Europe', 'YES', 'YES', '', ''),
+(61, 'BMW', '507', 'BMW 507', '-', 'Roadster car', '1956-1959', 'Roadster car', 'MY 1956-1959', 'Germany', 'Europe', 'YES', 'no', '', 'Old models'),
+(62, 'BMW', 'M1', 'BMW M1', '(E26)', 'Sports car', '1978-1981', 'Sports car', 'MY 1978-1981', 'Germany', 'Europe', 'YES', 'no', '456', ''),
+(63, 'BMW', 'Z8', 'BMW Z8', '(E52)', 'Sports car', '1999-2003', 'Sports car', 'MY 2000-2003', 'Germany', 'Europe', 'YES', 'no', '', ''),
+(64, 'BMW', 'i8', 'BMW i8', '(I12)', 'Sports car (hybrid)', '2013-____', 'Sports car', 'MY 2014-____', 'Germany', 'Europe', 'YES', 'YES', '', ''),
+(65, 'BMW', 'X1', 'BMW X1', '(E84)', 'Compact SUV', '2009-2015', 'Compact SUV', 'MY 2013-2015', 'Germany', 'Europe', 'YES', 'YES', '', ''),
+(66, 'BMW', 'X1', 'BMW X1', '(F48)', 'Compact SUV', '2015-____', 'Compact SUV', 'MY 2016-____', 'Germany', 'Europe', 'YES', '?', '', ''),
+(67, 'BMW', 'X2', 'BMW X2', '(F39)', 'Compact crossover', '2017-____', 'Compact crossover', 'MY 2018-____', 'Germany', 'Europe', 'YES', '?', '', ''),
+(68, 'BMW', 'X3', 'BMW X3', '(E83)', 'Medium SUV', '2003-2010', 'Compact SUV', 'MY 2004-2010', 'Germany', 'Europe', 'YES', 'YES', '', ''),
+(69, 'BMW', 'X3', 'BMW X3', '(F25)', 'Medium SUV', '2010-2017', 'Compact SUV', 'MY 2011-2017', 'Germany', 'Europe', 'YES', 'YES', '', ''),
+(70, 'BMW', 'X3', 'BMW X3', '(G01)', 'Medium SUV', '2017-____', 'Compact SUV', 'MY 2018-____', 'Germany', 'Europe', 'YES', 'YES', '', ''),
+(71, 'BMW', 'X4', 'BMW X4', '(F26)', 'Medium crossover', '2014-2018', 'Compact crossover', 'MY 2015-____', 'Germany', 'Europe', 'YES', 'no', '', ''),
+(72, 'BMW', 'X4', 'BMW X4', '(G02)', 'Medium crossover', '2018-____', 'Compact crossover', 'MY ??', 'Germany', 'Europe', 'YES', 'no', '', ''),
+(73, 'BMW', 'X5', 'BMW X5', '(E53)', 'Large SUV', '1999-2006', 'Mid-size SUV', 'MY 2000-2006', 'Germany', 'Europe', 'YES', 'no', '', 'Production and sales in North America started in 1999, sales in Europe started in 2000'),
+(74, 'BMW', 'X5', 'BMW X5', '(E70)', 'Large SUV', '2006-2013', 'Mid-size SUV', 'MY 2007-2013', 'Germany', 'Europe', 'YES', 'YES', '', ''),
+(75, 'BMW', 'X5', 'BMW X5', '(F15, F85)', 'Large SUV', '2013-____', 'Mid-size SUV', 'MY 2014-____', 'Germany', 'Europe', 'YES', 'YES', '', ''),
+(76, 'BMW', 'X6', 'BMW X6', '(E71, E72)', 'Large crossover', '2008-2014', 'Mid-size crossover SUV', 'MY 2008-2014', 'Germany', 'Europe', 'YES', 'YES', '', 'Wikipedia shows launch in MY 2009 but Edmunds show MY 2008'),
+(77, 'BMW', 'X6', 'BMW X6', '(F16, F86)', 'Large crossover', '2014-____', 'Mid-size crossover SUV', 'MY 2015-____', 'Germany', 'Europe', 'YES', 'YES', '', ''),
+(78, 'BMW', 'X7', 'BMW X7', '(G07)', 'Luxury SUV', '2018-____', 'Luxury SUV', 'MY 2019-____', 'Germany', 'Europe', 'YES', 'YES', '', 'Upcoming model, possible launch 2018 / MY 2019'),
+(79, 'Cadillac', 'Cimarron', 'Cadillac Cimarron', '-', '', '', 'Compact car', 'MY 1982-1988', 'United States', 'no', 'YES', 'no', '', ''),
+(80, 'Cadillac', 'BLS', 'Cadillac BLS', '-', 'Medium car', '2005-2010', '', '', 'United States', 'Europe', 'no', 'no', '', 'Sold only in Europe 2005-2010'),
+(81, 'Cadillac', 'ATS', 'Cadillac ATS', '-', 'Medium car', '2012-____', 'Compact car', 'MY 2013-____', 'United States', 'Europe', 'YES', 'no', '', 'Imported in Europe 2012-____'),
+(82, 'Cadillac', 'ELR', 'Cadillac ELR', '-', '', '', 'Compact car', 'MY 2014, 2016', 'United States', '?', 'YES', 'no', '', ''),
+(83, 'Cadillac', 'Catera', 'Cadillac Catera', '-', '', '', 'Mid-size car', 'MY 1997-2001', 'United States', 'no', 'YES', 'no', '', ''),
+(84, 'Cadillac', 'CTS', 'Cadillac CTS', '(1st gen)', 'Large car', '2002-2007', 'Mid-size car', 'MY 2003-2007', 'United States', 'Europe', 'YES', 'no', '', 'Imported in Europe 2002-2007'),
+(85, 'Cadillac', 'CTS', 'Cadillac CTS', '(2nd gen)', 'Large car', '2007-2010', 'Mid-size car', 'MY 2008-2013', 'United States', 'Europe', 'YES', 'no', '', 'Imported in Europe 2007-2010'),
+(86, 'Cadillac', 'CTS', 'Cadillac CTS', '(3rd gen)', '', '', 'Mid-size car', 'MY 2014-____', 'United States', 'no', 'YES', 'no', '', ''),
+(87, 'Cadillac', 'Series 60', 'Cadillac Series 60', '-', '', '', 'Mid-size car', 'MY 1936-1938', 'United States', 'no', 'YES', 'no', '', ''),
+(88, 'Cadillac', 'Series 61', 'Cadillac Series 61', '(1st gen)', '', '', 'Mid-size car', 'MY 1939', 'United States', 'no', 'YES', 'no', '', ''),
+(89, 'Cadillac', 'Series 61', 'Cadillac Series 61', '(2nd gen)', '', '', 'Mid-size car', 'MY 1941', 'United States', 'no', 'YES', 'no', '', ''),
+(90, 'Cadillac', 'Series 61', 'Cadillac Series 61', '(3rd gen)', '', '', 'Mid-size car', 'MY 1942-1947', 'United States', 'no', 'YES', 'no', '', ''),
+(91, 'Cadillac', 'Series 61', 'Cadillac Series 61', '(4th gen)', '', '', 'Mid-size car', 'MY 1948-1951', 'United States', 'no', 'YES', 'no', '', ''),
+(92, 'Cadillac', 'Series 65', 'Cadillac Series 65', '-', '', '', 'Mid-size car', 'MY 1937-1938', 'United States', 'no', 'YES', 'no', '', ''),
+(93, 'Cadillac', 'Series 62', 'Cadillac Series 62', '(1st gen)', '', '', 'Mid-size car', 'MY 1940-1941', 'United States', 'no', 'YES', 'no', '', ''),
+(94, 'Cadillac', 'Series 62', 'Cadillac Series 62', '(2nd gen)', '', '', 'Mid-size car', 'MY 1942-1947', 'United States', 'no', 'YES', 'no', '', ''),
+(95, 'Cadillac', 'Series 62', 'Cadillac Series 62', '(3rd gen)', '', '', 'Mid-size car', 'MY 1948-1953', 'United States', 'no', 'YES', 'no', '', ''),
+(96, 'Cadillac', 'Series 62', 'Cadillac Series 62', '(4th gen)', '', '', 'Mid-size car', 'MY 1954-1956', 'United States', 'no', 'YES', 'no', '', ''),
+(97, 'Cadillac', 'Series 62', 'Cadillac Series 62', '(5th gen)', '', '', 'Mid-size car', 'MY 1957-1958', 'United States', 'no', 'YES', 'no', '', ''),
+(98, 'Cadillac', '6200', 'Cadillac 6200', '(1st gen)', '', '', 'Mid-size car', 'MY 1959-1960', 'United States', 'no', 'YES', 'no', '', ''),
+(99, 'Cadillac', '6200', 'Cadillac 6200', '(2nd gen)', '', '', 'Mid-size car', 'MY 1961-1964', 'United States', 'no', 'YES', 'no', '', ''),
+(100, 'Cadillac', 'Calais', 'Cadillac Calais', '(1st gen)', '', '', 'Mid-size car', 'MY 1965-1970', 'United States', 'no', 'YES', 'no', '', ''),
+(101, 'Cadillac', 'Calais', 'Cadillac Calais', '(2nd gen)', '', '', 'Mid-size car', 'MY 1971-1976', 'United States', 'no', 'YES', 'no', '', ''),
+(102, 'Cadillac', 'Seville', 'Cadillac Seville', '(1st gen)', '', '', 'Mid-size car', 'MY 1975-1979', 'United States', '?', 'YES', 'no', '', ''),
+(103, 'Cadillac', 'Seville', 'Cadillac Seville', '(2nd gen)', '', '', 'Mid-size car', 'MY 1980-1985', 'United States', '?', 'YES', 'no', '', ''),
+(104, 'Cadillac', 'Seville', 'Cadillac Seville', '(3rd gen)', 'Luxury car', '??-1992', 'Mid-size car', 'MY 1986-1991', 'United States', 'Europe', 'YES', 'no', '', ''),
+(105, 'Cadillac', 'Seville', 'Cadillac Seville', '(4th gen)', 'Luxury car', '1992-1997', 'Mid-size car', 'MY 1992-1997', 'United States', 'Europe', 'YES', 'no', '', 'Imported in Europe 1991-1996'),
+(106, 'Cadillac', 'Seville', 'Cadillac Seville', '(5th gen)', 'Luxury car', '1997-2004', 'Mid-size car', 'MY 1998-2004', 'United States', 'Europe', 'YES', 'no', '', 'Imported in Europe 1997-2004'),
+(107, 'Cadillac', 'STS', 'Cadillac STS', '-', 'Luxury car', '1994-2010', 'Mid-size car', 'MY 2005-2011', 'United States', 'Europe', 'YES', 'no', '', 'Imported in Europe 2004-2010'),
+(108, 'Cadillac', 'Sedan de Ville', 'Cadillac Sedan de Ville', '(1st gen)', '', '', 'Full-size car', 'MY 1959-1960', 'United States', 'no', 'YES', 'no', '', ''),
+(109, 'Cadillac', 'Sedan de Ville', 'Cadillac Sedan de Ville', '(2nd gen)', '', '', 'Full-size car', 'MY 1961-1964', 'United States', 'no', 'YES', 'no', '', ''),
+(110, 'Cadillac', 'Sedan de Ville', 'Cadillac Sedan de Ville', '(3rd gen)', '', '', 'Full-size car', 'MY 1965-1970', 'United States', 'no', 'YES', 'no', '', ''),
+(111, 'Cadillac', 'Sedan de Ville', 'Cadillac Sedan de Ville', '(4th gen)', '', '', 'Full-size car', 'MY 1971-1976', 'United States', 'no', 'YES', 'no', '', ''),
+(112, 'Cadillac', 'Sedan de Ville', 'Cadillac Sedan de Ville', '(5th gen)', '', '', 'Full-size car', 'MY 1977-1984', 'United States', 'no', 'YES', 'no', '', ''),
+(113, 'Cadillac', 'Sedan de Ville', 'Cadillac Sedan de Ville', '(6th gen)', '', '', 'Full-size car', 'MY 1985-1993', 'United States', 'no', 'YES', 'no', '', ''),
+(114, 'Cadillac', 'Sedan de Ville', 'Cadillac Sedan de Ville', '(7th gen)', '', '', 'Full-size car', 'MY 1994-1999', 'United States', 'no', 'YES', 'no', '', ''),
+(115, 'Cadillac', 'Sedan de Ville', 'Cadillac Sedan de Ville', '(8th gen)', '', '', 'Full-size car', 'MY 2000-2005', 'United States', 'no', 'YES', 'no', '', ''),
+(116, 'Cadillac', 'DTS', 'Cadillac DTS', '-', '', '', 'Full-size car', 'MY 2006-2011', 'United States', 'no', 'YES', 'no', '', ''),
+(117, 'Cadillac', 'XTS', 'Cadillac XTS', '-', '', '', 'Full-size car', 'MY 2013-____', 'United States', 'no', 'YES', 'no', '', ''),
+(118, 'Cadillac', 'CT6', 'Cadillac CT6', '-', '', '', 'Full-size car', 'MY 2016-____', 'United States', 'no', 'YES', 'no', '', ''),
+(119, 'Cadillac', 'Coupe de Ville', 'Cadillac Coupe de Ville', '(1st gen)', '', '', 'Full-size car', 'MY 1959-1960', 'United States', 'no', 'YES', 'no', '', ''),
+(120, 'Cadillac', 'Coupe de Ville', 'Cadillac Coupe de Ville', '(2nd gen)', '', '', 'Full-size car', 'MY 1961-1964', 'United States', 'no', 'YES', 'no', '', ''),
+(121, 'Cadillac', 'Coupe de Ville', 'Cadillac Coupe de Ville', '(3rd gen)', '', '', 'Full-size car', 'MY 1965-1970', 'United States', 'no', 'YES', 'no', '', ''),
+(122, 'Cadillac', 'Coupe de Ville', 'Cadillac Coupe de Ville', '(4th gen)', '', '', 'Full-size car', 'MY 1971-1976', 'United States', 'no', 'YES', 'no', '', ''),
+(123, 'Cadillac', 'Coupe de Ville', 'Cadillac Coupe de Ville', '(5th gen)', '', '', 'Full-size car', 'MY 1977-1984', 'United States', 'no', 'YES', 'no', '', ''),
+(124, 'Cadillac', 'Coupe de Ville', 'Cadillac Coupe de Ville', '(6th gen)', '', '', 'Full-size car', 'MY 1985-1993', 'United States', 'no', 'YES', 'no', '', ''),
+(125, 'Cadillac', 'Series 60 (Sixty Special)', 'Cadillac Series 60 (Sixty Special)', '(1st gen)', '', '', 'Full-size car', 'MY 1938-1941', 'United States', 'no', 'YES', 'no', '', ''),
+(126, 'Cadillac', 'Series 60 (Sixty Special)', 'Cadillac Series 60 (Sixty Special)', '(2nd gen)', '', '', 'Full-size car', 'MY 1942-1947', 'United States', 'no', 'YES', 'no', '', ''),
+(127, 'Cadillac', 'Series 60 (Sixty Special)', 'Cadillac Series 60 (Sixty Special)', '(3rd gen)', '', '', 'Full-size car', 'MY 1948-1949', 'United States', 'no', 'YES', 'no', '', ''),
+(128, 'Cadillac', 'Series 60 (Sixty Special)', 'Cadillac Series 60 (Sixty Special)', '(4th gen)', '', '', 'Full-size car', 'MY 1950-1953', 'United States', 'no', 'YES', 'no', '', ''),
+(129, 'Cadillac', 'Series 60 (Sixty Special)', 'Cadillac Series 60 (Sixty Special)', '(5th gen)', '', '', 'Full-size car', 'MY 1954-1956', 'United States', 'no', 'YES', 'no', '', ''),
+(130, 'Cadillac', 'Series 60 (Sixty Special)', 'Cadillac Series 60 (Sixty Special)', '(6th gen)', '', '', 'Full-size car', 'MY 1957-1958', 'United States', 'no', 'YES', 'no', '', ''),
+(131, 'Cadillac', 'Series 60 (Sixty Special)', 'Cadillac Series 60 (Sixty Special)', '(7th gen)', '', '', 'Full-size car', 'MY 1959-1960', 'United States', 'no', 'YES', 'no', '', ''),
+(132, 'Cadillac', 'Series 60 (Sixty Special)', 'Cadillac Series 60 (Sixty Special)', '(8th gen)', '', '', 'Full-size car', 'MY 1961-1964', 'United States', 'no', 'YES', 'no', '', ''),
+(133, 'Cadillac', 'Series 60 (Sixty Special)', 'Cadillac Series 60 (Sixty Special)', '(9th gen)', '', '', 'Full-size car', 'MY 1965-1970', 'United States', 'no', 'YES', 'no', '', ''),
+(134, 'Cadillac', 'Series 60 (Sixty Special)', 'Cadillac Series 60 (Sixty Special)', '(10th gen)', '', '', 'Full-size car', 'MY 1971-1976', 'United States', 'no', 'YES', 'no', '', ''),
+(135, 'Cadillac', 'Series 60 (Sixty Special)', 'Cadillac Series 60 (Sixty Special)', '(11th gen)', '', '', 'Full-size car', 'MY 1987-1993', 'United States', 'no', 'YES', 'no', '', ''),
+(136, 'Cadillac', 'Fleetwood Brougham', 'Cadillac Fleetwood Brougham', '-', '', '', 'Full-size car', 'MY 1977-1986', 'United States', 'no', 'YES', 'no', '', ''),
+(137, 'Cadillac', 'Brougham', 'Cadillac Brougham', '-', '', '', 'Full-size car', 'MY 1987-1992', 'United States', '?', 'YES', 'no', '', ''),
+(138, 'Cadillac', 'Fleetwood', 'Cadillac Fleetwood', '(1st gen)', '', '', 'Full-size car', 'MY 1985-1992', 'United States', '?', 'YES', 'no', '', 'Imported in Europe ?-1993'),
+(139, 'Cadillac', 'Fleetwood', 'Cadillac Fleetwood', '(2nd gen)', 'Luxury car', '??-1993', 'Full-size car', 'MY 1993-1996', 'United States', 'Europe', 'YES', 'no', '', ''),
+(140, 'Cadillac', 'Series 75', 'Cadillac Series 75', '(1st gen)', '', '', 'Full-size car', 'MY 1936-1937', 'United States', 'no', 'YES', 'no', '', ''),
+(141, 'Cadillac', 'Series 75', 'Cadillac Series 75', '(2nd gen)', '', '', 'Full-size car', 'MY 1938-1940', 'United States', 'no', 'YES', 'no', '', ''),
+(142, 'Cadillac', 'Series 75', 'Cadillac Series 75', '(3rd gen)', '', '', 'Full-size car', 'MY 1941-1949', 'United States', 'no', 'YES', 'no', '', ''),
+(143, 'Cadillac', 'Series 75', 'Cadillac Series 75', '(4th gen)', '', '', 'Full-size car', 'MY 1950-1953', 'United States', 'no', 'YES', 'no', '', ''),
+(144, 'Cadillac', 'Series 75', 'Cadillac Series 75', '(5th gen)', '', '', 'Full-size car', 'MY 1954-1956', 'United States', 'no', 'YES', 'no', '', ''),
+(145, 'Cadillac', 'Series 75', 'Cadillac Series 75', '(6th gen)', '', '', 'Full-size car', 'MY 1957-1958', 'United States', 'no', 'YES', 'no', '', ''),
+(146, 'Cadillac', 'Series 75', 'Cadillac Series 75', '(7th gen)', '', '', 'Full-size car', 'MY 1959-1960', 'United States', 'no', 'YES', 'no', '', ''),
+(147, 'Cadillac', 'Series 75', 'Cadillac Series 75', '(8th gen)', '', '', 'Full-size car', 'MY 1961-1965', 'United States', 'no', 'YES', 'no', '', ''),
+(148, 'Cadillac', 'Series 75', 'Cadillac Series 75', '(9th gen)', '', '', 'Full-size car', 'MY 1966-1970', 'United States', 'no', 'YES', 'no', '', ''),
+(149, 'Cadillac', 'Series 75', 'Cadillac Series 75', '(10th gen)', '', '', 'Full-size car', 'MY 1971-1976', 'United States', 'no', 'YES', 'no', '', ''),
+(150, 'Cadillac', 'Fleetwood Limousine', 'Cadillac Fleetwood Limousine', '-', '', '', 'Full-size car', 'MY 1977-1984', 'United States', 'no', 'YES', 'no', '', ''),
+(151, 'Cadillac', 'Fleetwood 75', 'Cadillac Fleetwood 75', '-', '', '', 'Full-size car', 'MY 1985-1987', 'United States', 'no', 'YES', 'no', '', ''),
+(152, 'Cadillac', 'Eldorado', 'Cadillac Eldorado', '(1st gen)', '', '', 'Personal luxury car', 'MY 1953', 'United States', 'no', 'YES', 'no', '', ''),
+(153, 'Cadillac', 'Eldorado', 'Cadillac Eldorado', '(2nd gen)', '', '', 'Personal luxury car', 'MY 1954-1956', 'United States', 'no', 'YES', 'no', '', ''),
+(154, 'Cadillac', 'Eldorado', 'Cadillac Eldorado', '(3rd gen)', '', '', 'Personal luxury car', 'MY 1957-1958', 'United States', 'no', 'YES', 'no', '', ''),
+(155, 'Cadillac', 'Eldorado', 'Cadillac Eldorado', '(4th gen)', '', '', 'Personal luxury car', 'MY 1959-1960', 'United States', 'no', 'YES', 'no', '', ''),
+(156, 'Cadillac', 'Eldorado', 'Cadillac Eldorado', '(5th gen)', '', '', 'Personal luxury car', 'MY 1961-1964', 'United States', 'no', 'YES', 'no', '', ''),
+(157, 'Cadillac', 'Eldorado', 'Cadillac Eldorado', '(6th gen)', '', '', 'Personal luxury car', 'MY 1965-1966', 'United States', 'no', 'YES', 'no', '', ''),
+(158, 'Cadillac', 'Eldorado', 'Cadillac Eldorado', '(7th gen)', '', '', 'Personal luxury car', 'MY 1967-1970', 'United States', 'no', 'YES', 'no', '', ''),
+(159, 'Cadillac', 'Eldorado', 'Cadillac Eldorado', '(8th gen)', '', '', 'Personal luxury car', 'MY 1971-1978', 'United States', 'no', 'YES', 'no', '', ''),
+(160, 'Cadillac', 'Eldorado', 'Cadillac Eldorado', '(9th gen)', '', '', 'Personal luxury car', 'MY 1979-1985', 'United States', '?', 'YES', 'no', '', ''),
+(161, 'Cadillac', 'Eldorado', 'Cadillac Eldorado', '(10th gen)', '', '', 'Personal luxury car', 'MY 1986-1991', 'United States', '?', 'YES', 'no', '', ''),
+(162, 'Cadillac', 'Eldorado', 'Cadillac Eldorado', '(11th gen)', 'Luxury car', '1993-1996', 'Personal luxury car', 'MY 1992-2002', 'United States', 'Europe', 'YES', 'no', '', ''),
+(163, 'Cadillac', 'XT4', 'Cadillac XT4', '-', '', '', 'Compact SUV', 'MY 2019-____', 'United States', '?', 'YES', 'no', '', ''),
+(164, 'Cadillac', 'SRX', 'Cadillac SRX', '(1st gen)', '', '', 'Mid-size SUV', 'MY 2004-2009', 'United States', 'no', 'YES', 'no', '', 'Imported in Europe 2004-2010'),
+(165, 'Cadillac', 'SRX', 'Cadillac SRX', '(2nd gen)', '', '', 'Mid-size SUV', 'MY 2010-2016', 'United States', 'no', 'YES', 'no', '', ''),
+(166, 'Cadillac', 'XT5', 'Cadillac XT5', '-', '', '', 'Mid-size SUV', 'MY 2017-____', 'United States', 'no', 'YES', 'no', '', ''),
+(167, 'Cadillac', 'Escalade', 'Cadillac Escalade', '(1st gen)', '', '', 'Full-size SUV', 'MY 1999-2000', 'United States', 'no', 'YES', 'no', '', ''),
+(168, 'Cadillac', 'Escalade', 'Cadillac Escalade', '(2nd gen)', '', '', 'Full-size SUV', 'MY 2002-2006', 'United States', 'no', 'YES', 'no', '', ''),
+(169, 'Cadillac', 'Escalade', 'Cadillac Escalade', '(3rd gen)', 'Luxury SUV', '2007-2009', 'Full-size SUV', 'MY 2007-2014', 'United States', 'Europe', 'YES', 'no', '', 'Imported in Europe 2007-2009'),
+(170, 'Cadillac', 'Escalade', 'Cadillac Escalade', '(4rd gen)', '', '', 'Full-size SUV', 'MY 2015-____', 'United States', 'no', 'YES', 'no', '', 'Imported in Europe 2007-2009'),
+(171, 'Cadillac', 'Allant?,-', 'Cadillac Allant?,-', 'Roadster car', '??-1993', 'Roadster car', 'MY 1987-1993', 'United States', 'Europe', 'YES', 'no', '', 'Imported in Europe ?-1993', NULL),
+(172, 'Cadillac', 'XLR', 'Cadillac XLR', '-', 'Roadster car', '2004-2009', 'Roadster car', 'MY 2004-2009', 'United States', 'Europe', 'YES', 'no', '', 'Imported in Europe 2004-2009'),
+(173, 'Kia', 'Picanto', 'Kia Picanto', '(1st gen - TA)', 'Mini car', '2004-2011', '', '', 'South Korea', 'Europe', 'no', 'no', '', ''),
+(174, 'Kia', 'Picanto', 'Kia Picanto', '(2nd gen - SA)', 'Mini car', '2011-2017', '', '', 'South Korea', 'Europe', 'no', 'no', '', ''),
+(175, 'Kia', 'Picanto', 'Kia Picanto', '(3rd gen)', 'Mini car', '2017-____', '', '', 'South Korea', 'Europe', 'no', 'no', '', ''),
+(176, 'Kia', 'Pride', 'Kia Pride', '(1st gen)', 'Small car', '1986-1995', '', '', 'South Korea', 'no', 'no', 'no', '', ''),
+(177, 'Kia', 'Pride', 'Kia Pride', '(2nd gen)', 'Small car', '1995-2001', '', '', 'South Korea', 'Europe', 'no', 'no', '', ''),
+(178, 'Kia', 'Rio', 'Kia Rio', '(1st gen - DC)', 'Small car', '2000-2005', 'Subcompact car', 'MY 2001-2005', 'South Korea', 'Europe', 'YES', 'no', '', ''),
+(179, 'Kia', 'Rio', 'Kia Rio', '(2nd gen - JB)', 'Small car', '2005-2011', 'Subcompact car', 'MY 2006-2011', 'South Korea', 'no', 'YES', 'no', '', ''),
+(180, 'Kia', 'Rio', 'Kia Rio', '(3rd gen - UB)', 'Small car', '2011-2017', 'Subcompact car', 'MY 2012-2017', 'South Korea', 'no', 'YES', 'no', '', ''),
+(181, 'Kia', 'Rio', 'Kia Rio', '(4th gen - SC)', 'Small car', '2017-____', 'Subcompact car', 'MY 2018-____', 'South Korea', 'no', 'YES', 'no', '', ''),
+(182, 'Kia', 'Soul', 'Kia Soul', '(1st gen - AM)', 'Small car', '2008-2013', 'Subcompact car', 'MY 2010-2013', 'South Korea', 'Europe', 'YES', 'no', '', ''),
+(183, 'Kia', 'Soul', 'Kia Soul', '(2nd gen - PS)', 'Small car', '2014-____', 'Subcompact car', 'MY 2014-____', 'South Korea', 'Europe', 'YES', 'no', '', ''),
+(184, 'Kia', 'Avella', 'Kia Avella', '-', 'Compact car', '1994-1998', '', '', 'South Korea', 'no', 'no', 'no', '', ''),
+(185, 'Kia', 'Cee''d', 'Kia Cee''d', '(1st gen)', 'Compact car', '2006-2012', '', '', 'South Korea', 'Europe', 'no', 'no', '', ''),
+(186, 'Kia', 'Cee''d', 'Kia Cee''d', '(2nd gen)', 'Compact car', '2012-2018', '', '', 'South Korea', 'Europe', 'no', 'no', '', ''),
+(187, 'Kia', 'Cee''d', 'Kia Cee''d', '(3rd gen)', 'Compact car', '2018-____', '', '', 'South Korea', 'Europe', 'no', 'no', '', ''),
+(188, 'Kia', 'Sephia', 'Kia Sephia', '(1st gen)', 'Compact car', '1992-1997', 'Compact car', 'MY 1994-1997', 'South Korea', 'Europe', 'YES', 'no', '', ''),
+(189, 'Kia', 'Sephia', 'Kia Sephia', '(2nd gen)', 'Compact car', '1997-2003', 'Compact car', 'MY 1998-2001', 'South Korea', 'Europe', 'YES', 'no', '', ''),
+(190, 'Kia', 'Cerato / Spectra', 'Kia Cerato / Spectra', '(LD)', 'Compact car', '2003-2008', 'Compact car', 'MY 2005-2009', 'South Korea', 'Europe', 'YES', 'no', '', 'Sold in North America as Kia Spectra'),
+(191, 'Kia', 'Forte', 'Kia Forte', '(1st gen - TD)', 'Compact car', '2008-2013', 'Compact car', 'MY 2010-2013', 'South Korea', 'Only Russia', 'YES', 'no', '', ''),
+(192, 'Kia', 'Forte / K3', 'Kia Forte / K3', '(2nd gen)', 'Compact car', '2013-2018', 'Compact car', 'MY 2014-2018', 'South Korea', 'Only Russia', 'YES', 'no', '', ''),
+(193, 'Kia', 'Forte / K3', 'Kia Forte / K3', '(3rd gen)', 'Compact car', '2018-____', 'Compact car', 'MY 2019-____', 'South Korea', 'Only Russia', 'YES', 'no', '', ''),
+(194, 'Kia', 'Shuma', 'Kia Shuma', '-', 'Compact-medium car', '1998-2003', '', '', 'South Korea', 'Europe', 'no', 'no', '', ''),
+(195, 'Kia', 'Concord', 'Kia Concord', '-', 'Medium car', '1987-1995', '', '', 'South Korea', 'no', 'no', 'no', '', ''),
+(196, 'Kia', 'Clarus', 'Kia Clarus', '-', 'Medium car', '1995-2001', '', '', 'South Korea', 'Europe', 'no', 'no', '', ''),
+(197, 'Kia', 'Magentis / Optima', 'Kia Magentis / Optima', '(1st gen - MS)', 'Medium car', '2001-2006', 'Mid-size car', 'MY 2001-2006', 'South Korea', 'Europe', 'YES', 'no', '', 'Sold in North America as Kia Optima'),
+(198, 'Kia', 'Magentis / Optima', 'Kia Magentis / Optima', '(2nd gen - MG)', 'Medium car', '2006-2010', 'Mid-size car', 'MY 2007-2010', 'South Korea', 'Europe', 'YES', 'no', '', 'Sold in North America as Kia Optima'),
+(199, 'Kia', 'Magentis / Optima / K5', 'Kia Magentis / Optima / K5', '(3rd gen - TF)', 'Medium car', '2010-2015', 'Mid-size car', 'MY 2011-2015', 'South Korea', 'no', 'YES', 'no', '', 'Sold in North America as Kia Optima'),
+(200, 'Kia', 'Magentis / Optima / K5', 'Kia Magentis / Optima / K5', '(4rd gen - JF)', 'Medium car', '2015-____', 'Mid-size car', 'MY 2016-____', 'South Korea', 'no', 'YES', 'no', '', 'Sold in North America as Kia Optima'),
+(201, 'Kia', 'Stinger', 'Kia Stinger', '-', 'Medium car', '2017-____', 'Mid-size car', 'MY 2018-____', 'South Korea', 'Europe', 'YES', 'no', '', ''),
+(202, 'Kia', 'Potentia', 'Kia Potentia', '(1st gen)', 'Large-luxury car', '1992-1997', '', '', 'South Korea', 'no', 'no', 'no', '', ''),
+(203, 'Kia', 'Potentia', 'Kia Potentia', '(2nd gen)', 'Large-luxury car', '1997-2002', '', '', 'South Korea', 'no', 'no', 'no', '', ''),
+(204, 'Kia', 'Enterprise', 'Kia Enterprise', '-', 'Large-luxury car', '1997-2002', '', '', 'South Korea', 'no', 'no', 'no', '', ''),
+(205, 'Kia', 'Opirus / Amanti', 'Kia Opirus / Amanti', '-', 'Large-luxury car', '2002-2011', 'Full-size car', 'MY 2004-2010', 'South Korea', 'Europe', 'YES', 'no', '', 'Sold in North America as Kia Amanti'),
+(206, 'Kia', 'Cadenza / K7', 'Kia Cadenza / K7', '(1st gen)', 'Large-luxury car', '2010-2016', 'Full-size car', 'MY 2014-2016', 'South Korea', 'no', 'YES', 'no', '', ''),
+(207, 'Kia', 'Cadenza / K7', 'Kia Cadenza / K7', '(2nd gen)', 'Large-luxury car', '2016-____', 'Full-size car', 'MY 2017-____', 'South Korea', 'no', 'YES', 'no', '', ''),
+(208, 'Kia', 'Quoris / K9 / K900', 'Kia Quoris / K9 / K900', '(1st gen)', 'Luxury car', '2012-2018', 'Full-size car', 'MY 2015-2018', 'South Korea', 'Only Russia', 'YES', 'no', '', ''),
+(209, 'Kia', 'Quoris / K9 / K900', 'Kia Quoris / K9 / K900', '(2nd gen)', 'Luxury car', '2018-____', 'Full-size car', 'MY 2019-____', 'South Korea', 'Only Russia', 'YES', 'no', '', ''),
+(210, 'Kia', 'Elan', 'Kia Elan', '-', 'Roadster car', '1996-1999', '', '', 'South Korea', 'no', 'no', 'no', '', ''),
+(211, 'Kia', 'Venga', 'Kia Venga', '-', 'Small MPV', '2009-____', '', '', 'South Korea', 'Europe', 'no', 'no', '', ''),
+(212, 'Kia', 'Carens', 'Kia Carens', '(1st gen)', 'Compact MPV', '2001-2006', '', '', 'South Korea', 'Europe', 'no', 'no', '', ''),
+(213, 'Kia', 'Carens / Rondo', 'Kia Carens / Rondo', '(2nd gen)', 'Compact MPV', '2006-2012', 'Compact MPV', 'MY 2007-2012', 'South Korea', 'Europe', 'YES', 'no', '', 'Sold in North America and Australia as Kia Rondo'),
+(214, 'Kia', 'Joice', 'Kia Joice', '-', 'Medium MPV', '1999-2002', '', '', 'South Korea', 'Europe', 'no', 'no', '', ''),
+(215, 'Kia', 'Carnival / Sedona', 'Kia Carnival / Sedona', '(1st gen)', 'Large MPV', '1998-2006', 'Minivan', 'MY 2002-2005', 'South Korea', 'Europe', 'YES', 'no', '', 'Sold in North America as Kia Sedona'),
+(216, 'Kia', 'Carnival / Sedona', 'Kia Carnival / Sedona', '(2nd gen)', 'Large MPV', '2006-2014', 'Minivan', 'MY 2006-2012, 2014', 'South Korea', 'Europe', 'YES', 'no', '', 'Sold in North America as Kia Sedona'),
+(217, 'Kia', 'Carnival / Sedona', 'Kia Carnival / Sedona', '(3rd gen)', 'Large MPV', '2014-____', 'Minivan', 'MY 2015-____', 'South Korea', 'Europe', 'YES', 'no', '', 'Sold in North America as Kia Sedona'),
+(218, 'Kia', 'Retona', 'Kia Retona', '-', 'Light off-road vehicle', '1998-2003', '', '', 'South Korea', 'Europe', 'no', 'no', '', ''),
+(219, 'Kia', 'Stonic', 'Kia Stonic', '-', 'Small crossover', '2017-____', 'Subcompact crossover SUV', 'MY 2018-____', 'South Korea', 'Europe', 'YES', 'no', '', ''),
+(220, 'Kia', 'Niro', 'Kia Niro', '-', 'Compact crossover', '2016-____', 'Compact crossover SUV', 'MY 2017-____', 'South Korea', 'Europe', 'YES', 'no', '', ''),
+(221, 'Kia', 'Sportage', 'Kia Sportage', '(1st gen - JA)', 'Compact SUV', '1995-2002', 'Compact SUV', 'MY 1995-2002', 'South Korea', 'Europe', 'YES', 'no', '', ''),
+(222, 'Kia', 'Sportage', 'Kia Sportage', '(2nd gen - SE)', 'Compact SUV', '2004-2010', 'Compact SUV', 'MY 2005-2010', 'South Korea', 'Europe', 'YES', 'no', '', ''),
+(223, 'Kia', 'Sportage', 'Kia Sportage', '(3rd gen - SL)', 'Compact SUV', '2010-____', 'Compact SUV', 'MY 2011-____', 'South Korea', 'Europe', 'YES', 'no', '', ''),
+(224, 'Kia', 'Sorento', 'Kia Sorento', '(1st gen - BL)', 'Medium SUV', '2002-2009', 'Mid-size SUV', 'MY 2003-2009', 'South Korea', 'Europe', 'YES', 'no', '', ''),
+(225, 'Kia', 'Sorento', 'Kia Sorento', '(2nd gen - XM)', 'Medium SUV', '2009-2015', 'Mid-size SUV', 'MY 2011-2015', 'South Korea', 'Europe', 'YES', 'no', '', ''),
+(226, 'Kia', 'Sorento', 'Kia Sorento', '(3rd gen - UM)', 'Medium SUV', '2015-____', 'Mid-size SUV', 'MY 2016-____', 'South Korea', 'Europe', 'YES', 'no', '', ''),
+(227, 'Kia', 'Mohave / Borrego', 'Kia Mohave / Borrego', '-', 'Large SUV', '2008-____', 'Full-size SUV', 'MY 2009-2011', 'South Korea', 'no', 'YES', 'no', '', 'Sold in North America as Kia Borrego'),
+(228, 'Kia', 'Bongo', 'Kia Bongo', '(1st gen)', 'Pickup truck', '1980-1997', '', '', 'South Korea', 'no', 'no', 'no', '', ''),
+(229, 'Kia', 'Bongo Frontier', 'Kia Bongo Frontier', '(2nd gen)', 'Pickup truck', '1997-2004', '', '', 'South Korea', 'no', 'no', 'no', '', ''),
+(230, 'Kia', 'Bongo', 'Kia Bongo', '(3rd gen)', 'Pickup truck', '2005-____', '', '', 'South Korea', 'no', 'no', 'no', '', ''),
+(231, 'Volkswagen', 'Fusca', 'Volkswagen Fusca', '-', 'Economic car', '?-1986, 1993-1996', '', '', 'Brazil', 'no', 'no', 'no', '', ''),
+(232, 'Volkswagen', 'Gol', 'Volkswagen Gol', '(G1)', 'Small car', '1980-1994', '', '', 'Brazil', 'no', 'no', 'no', '', ''),
+(233, 'Volkswagen', 'Gol', 'Volkswagen Gol', '(G2, G3, G4)', 'Small car', '1994-2013', '', '', 'Brazil', 'no', 'no', 'no', '', ''),
+(234, 'Volkswagen', 'Gol', 'Volkswagen Gol', '(G5)', 'Small car', '2008-____', '', '', 'Brazil', 'no', 'no', 'no', '', ''),
+(235, 'Volkswagen', 'Voyage / Fox', 'Volkswagen Voyage / Fox', '(G1)', 'Small car', '1983-1994', 'Subcompact car', 'MY 1987-1993', 'Brazil', 'no', 'YES', 'no', '', 'Sold in North America as Volkswagen Fox'),
+(236, 'Volkswagen', 'Voyage', 'Volkswagen Voyage', '(G5)', 'Small car', '2008-____', '', '', 'Brazil', 'no', 'no', 'no', '', ''),
+(237, 'Volkswagen', 'Parati', 'Volkswagen Parati', '(G1)', 'Small car', '1982-1994', '', '', 'Brazil', 'no', 'no', 'no', '', ''),
+(238, 'Volkswagen', 'Parati', 'Volkswagen Parati', '(G2)', 'Small car', '1994-1999', '', '', 'Brazil', 'no', 'no', 'no', '', ''),
+(239, 'Volkswagen', 'Fox', 'Volkswagen Fox', '-', 'Small car', '2003-____', '', '', 'Brazil', 'no', 'no', 'no', '', ''),
+(240, 'Volkswagen', 'Brasilia', 'Volkswagen Brasilia', '-', 'Compact car', '1973-1982', '', '', 'Brazil', 'no', 'no', 'no', '', ''),
+(241, 'Volkswagen', 'Apollo', 'Volkswagen Apollo', '-', 'Compact car', '1990-1992', '', '', 'Brazil', 'no', 'no', 'no', '', 'Rebadged Ford Verona'),
+(242, 'Volkswagen', 'Logus', 'Volkswagen Logus', '-', 'Compact car', '1993-1997', '', '', 'Brazil', 'no', 'no', 'no', '', ''),
+(243, 'Volkswagen', 'Pointer', 'Volkswagen Pointer', '-', 'Compact car', '1994-1996', '', '', 'Brazil', 'no', 'no', 'no', '', ''),
+(244, 'Volkswagen', 'Santana', 'Volkswagen Santana', '-', 'Medium car', '1984-2006', '', '', 'Brazil', 'no', 'no', 'no', '', ''),
+(245, 'Volkswagen', 'Quantum', 'Volkswagen Quantum', '-', 'Medium car', '1985-2002', '', '', 'Brazil', 'no', 'no', 'no', '', ''),
+(246, 'Volkswagen', 'SpaceFox / Suran / SportVan / Fox Plus', 'Volkswagen SpaceFox / Suran / SportVan / Fox Plus', '-', 'Small MPV', '2006-____', '', '', 'Brazil', 'no', 'no', 'no', '', ''),
+(247, 'Volkswagen', 'SP2', 'Volkswagen SP2', '-', 'Sports car', '1972-1976', '', '', 'Brazil', 'no', 'no', 'no', '10205', ''),
+(248, 'Volkswagen', 'Saveiro', 'Volkswagen Saveiro', '(G1)', 'Pickup', '1983-1994', '', '', 'Brazil', 'no', 'no', 'no', '', ''),
+(249, 'Volkswagen', 'Saveiro', 'Volkswagen Saveiro', '(G5)', 'Pickup', '2008-____', '', '', 'Brazil', 'no', 'no', 'no', '', '');
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `car database`
+--
+ALTER TABLE `car database`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `car database`
+--
+ALTER TABLE `car database`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=250;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
